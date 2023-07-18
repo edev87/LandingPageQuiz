@@ -17,6 +17,25 @@ body {
     background-image: url("/img/LandingPage_1920.png");
     background-position: top right;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cf-darkblue);
+}
+
+nav {
+    color: var(--cf-light);
+}
+
+#img {
+    height: 40px;
+    width: 40px;
+}
+
+.main-title {
+    font-family: 'Racing Sans One', cursive;
+}
+
+.subtitle {
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .content {
@@ -25,4 +44,165 @@ body {
 
 .footer {
     flex-shrink: 0;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        background-image: url("/img/LandingPage_576.png");
+        background-position: center;
+        /* background-position-x: auto;
+      background-position-y: auto; */
+        background-repeat: no-repeat;
+    }
+
+nav{
+    background-color: transparent;
+}
+    nav>div.container-fluid>button#toggle {
+        display: none;
+    }
+    
+   
+
+    #image {
+        height: 40px;
+        width: 40px;
+    }
+
+    div#button {
+        text-align: center;
+        width: 50%;
+    }
+
+   
+
+    button {
+        width: 100%;
+    }
+
+    div#CTA {
+        margin-top: 501px;
+    }
+
+
+}
+
+@media (min-width: 576px) {
+    body {
+        background-image: url("/img/LandingPage_576.png");
+        background-position: center;
+        background-position-x: 70;
+        background-position-y: 50;
+        background-repeat: no-repeat;
+    }
+    nav{
+        background-color: transparent;
+    }
+
+    #image {
+        height: 40px;
+        width: 40px;
+    }
+
+    div#button {
+        text-align: center;
+    }
+
+    div#CTA {
+        margin-top: 530px;
+    }
+
+
+    /* div#button {
+        text-align: center;
+
+    } */
+
+    /* div#cta {
+        display: flex;
+        justify-content: flex-end;
+    } */
+
+
+}
+
+@media (min-width: 768px) {
+    #image {
+        height: 40px;
+        width: 40px;
+    }
+
+    body {
+        background-image: url("/img/LandingPage_576.png");
+      background-position: center; 
+         background-repeat: no-repeat;
+        
+    }
+
+    /* div#CTA {
+        display: flex;
+
+    } */
+
+    .subtitle {}
+
+
+    div#button {
+        text-align: center;
+
+    }
+
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    div#CTA {
+        margin-top: 250px;
+    }
+
+    div#button {
+        text-align: start;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    div#CTA {
+        /* display: flex;
+      align-items: flex-start; */
+        text-align: start;
+
+    }
+
+    main>div>div#CTS {
+        display: flex;
+        align-self: center;
+        text-align: start
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    div#CTA {
+        /* display: flex;
+      align-items: flex-start; */
+        text-align: start;
+
+    }
+
+    main>div>div#CTS {
+        display: flex;
+        align-self: center;
+        text-align: start
+    }
 }
