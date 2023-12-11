@@ -14,195 +14,149 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
+    background-image: url("/img/LandingPage_576.png");
+    background-position: top center;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     background-color: var(--cf-darkblue);
 }
 
-nav {
-    color: var(--cf-light);
+.my-nav-bar {
+    color: var(--cf-light) !important;
 }
 
-#img {
-    height: 40px;
-    width: 40px;
+.nav-item a {
+    color: var(--cf-light)
 }
+
+.nav-item a:hover {
+    color: var(--cf-highlight) !important;
+}
+
+.bg-warning {
+    background-color: var(--cf-highlight);
+    border-color: var(--cf-highlight);
+}
+
+
 
 .main-title {
     font-family: 'Racing Sans One', cursive;
+    font-size: 2.5rem;
+    line-height: 2rem;
 }
 
 .subtitle {
     font-family: 'Fira Sans', sans-serif;
+    font-size: .95rem;
+    font-weight: 200;
+    letter-spacing: .06rem;
 }
 
 .content {
     flex: 1 0 auto;
 }
 
+/* Minimum size and up */
 .footer {
     flex-shrink: 0;
 }
 
-
-@media (max-width: 576px) {
-    body {
-        background-image: url("/img/LandingPage_576.png");
-        background-position: center;
-        /* background-position-x: auto;
-      background-position-y: auto; */
-        background-repeat: no-repeat;
-    }
-
-nav{
-    background-color: transparent;
+#cta-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
-    nav>div.container-fluid>button#toggle {
-        display: none;
-    }
-    
-   
-
-    #image {
-        height: 40px;
-        width: 40px;
-    }
-
-    div#button {
-        text-align: center;
-        width: 50%;
-    }
-
-   
-
-    button {
-        width: 100%;
-    }
-
-    div#CTA {
-        margin-top: 501px;
-    }
 
 
-}
 
 @media (min-width: 576px) {
     body {
-        background-image: url("/img/LandingPage_576.png");
-        background-position: center;
-        background-position-x: 70;
-        background-position-y: 50;
+        background-image: url("/img/LandingPage_768.png");
+        background-position: top right;
         background-repeat: no-repeat;
     }
-    nav{
-        background-color: transparent;
+
+
+    .main-title {
+        font-size: 3.5rem;
+        line-height: 3rem;
     }
 
-    #image {
-        height: 40px;
-        width: 40px;
+    .subtitle {
+        font-size: 1.3rem;
+        font-weight: 200;
+        letter-spacing: .1rem;
     }
 
-    div#button {
-        text-align: center;
-    }
-
-    div#CTA {
-        margin-top: 530px;
+    #cta-container {
+        padding-bottom: 3rem;
     }
 
 
-    /* div#button {
-        text-align: center;
-
-    } */
-
-    /* div#cta {
-        display: flex;
-        justify-content: flex-end;
-    } */
-
-
-}
-
-@media (min-width: 768px) {
-    #image {
-        height: 40px;
-        width: 40px;
-    }
-
-    body {
-        background-image: url("/img/LandingPage_576.png");
-      background-position: center; 
-         background-repeat: no-repeat;
-        
-    }
-
-    /* div#CTA {
-        display: flex;
-
-    } */
-
-    .subtitle {}
-
-
-    div#button {
-        text-align: center;
-
-    }
 
 
 }
 
 /* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+    body {
+        background-image: url("/img/LandingPage_992.png");
+        background-position: top right;
+    }
+
+    #cta-container {
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+
+}
 
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {
-        background-image: url("/img/LandingPage_1920.png");
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    div#CTA {
-        margin-top: 250px;
+        background-image: url("/img/LandingPage_1200.png");
+
     }
 
-    div#button {
-        text-align: start;
-    }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    div#CTA {
-        /* display: flex;
-      align-items: flex-start; */
-        text-align: start;
+    body {
+        background-image: url("/img/LandingPage_1400.png");
 
     }
 
-    main>div>div#CTS {
-        display: flex;
-        align-self: center;
-        text-align: start
+    #cta-container {
+        padding-left: 3rem;
     }
+
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    div#CTA {
-        /* display: flex;
-      align-items: flex-start; */
-        text-align: start;
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+        background-size: cover;
 
     }
 
-    main>div>div#CTS {
-        display: flex;
-        align-self: center;
-        text-align: start
+    .main-title {
+        font-size: 3.5rem;
+        line-height: 3rem;
     }
+
+    .subtitle {
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: .065rem;
+    }
+
 }

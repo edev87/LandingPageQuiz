@@ -23,42 +23,57 @@
 
 <body>
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark my-nav-bar">
         <div class="container-fluid">
-            <img id="image" src="/img/RocketLogo.png" class="img-fluid p-2" alt="">
-            <a class="navbar-brand" href="#">Rocket Motivation</a>
-            <button id="toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="image" src="/img/RocketLogo.png" height="40" alt="">
+            <a class="navbar-brand my-nav-bar" href="#">Rocket Motivation</a>
+            <button id="toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active my-nav-bar" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        <a class="nav-link my-nav-bar" aria-current="page" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link my-nav-bar" aria-current="page" href="#">About</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--Main Content Section-->
-    <main class="content container-fluid pt-5 ">
-        <div class=" text-light p-5">
-            <div id="CTA" class="row flex-column justify-content-lg-center align-content-lg-center">
-                <p class="main-title display-5 text-uppercase w-100 text-lg-start col-lg-4 col-md-6 col-sm-12 text-sm-center"> Never give up on your dreams</p>
-                <p class="subtitle text-uppercase w-100 text-lg-start col-lg-4 col-md-6 col-sm-12 text-sm-center">Learn to code and start a new career</p>
+    <!-- container-fluid -->
+    <main class="content pt-5 ">
+        <div class="container-fluid" id="cta-container">
+            <div class="text-light" >
+                <div class="main-title"> Never give up </div>
+                <div class="main-title">on your dreams</div>
+                <div class="subtitle">Learn to code and start a new career</div>
+                <button class="btn btn-warning mt-3">START TODAY!</button>
             </div>
 
-            <div id="button" class="row" >
+        </div>
+        <!-- <div class=" text-light p-5">
+            <div id="CTA" class="row flex-column justify-content-lg-center align-content-lg-center">
+                <p
+                    class="main-title display-5 text-uppercase w-100 text-lg-start col-lg-4 col-md-6 col-sm-12 text-sm-center">
+                    Never give up on your dreams</p>
+                <p class="subtitle text-uppercase w-100 text-lg-start col-lg-4 
+                col-md-6 col-sm-12 text-sm-center">Learn
+                    to code and start a new career</p>
+            </div>
+
+            <div id="button" class="row">
                 <div class="col-sm-12">
                     <button class="btn btn-warning mr-5 w-35">START TODAY!</button>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -69,8 +84,7 @@
     <!--Footer Section-->
     <footer class="footer">
         <div class="container-fluid py-3 text-center">
-            <span class="text-muted">&copy; 2002</span>
-            <span class="text-muted">Rocket Motivation</span>
+            <span class="my-nav-bar"> &copy; 2002 Rocket Motivation</span>
         </div>
     </footer>
     <!-- Bootstrap JS -->
